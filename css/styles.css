@@ -16,6 +16,8 @@ body {
   max-width: 1400px;
   margin: 0 auto;
 }
+
+/* Header */
 header.container {
   display: flex;
   align-items: center;
@@ -41,8 +43,6 @@ header.container {
   background: rgba(240, 99, 184, 1);
   border-radius: 50px;
 }
-/* header {
-            } */
 header nav {
   flex: 1;
 }
@@ -53,7 +53,8 @@ header nav ul {
   gap: 32px;
   font-weight: 500;
 }
-.active {
+nav .active,
+header nav ul a:hover {
   color: rgba(33, 35, 83, 1);
   font-weight: 800;
 }
@@ -79,6 +80,8 @@ header button,
   font-weight: 800;
   cursor: pointer;
 }
+
+/* Banner Section */
 .banner {
   background-image: url("../img/banner.png");
   background-position: bottom right;
@@ -135,6 +138,8 @@ p {
   font-weight: 800;
   text-align: center;
 }
+
+/* Help Section */
 .help {
   margin-top: 100px;
 }
@@ -159,6 +164,8 @@ p {
   gap: 50px;
   padding-right: 80px;
 }
+
+/* Features Section */
 .features {
   display: flex;
   flex-direction: column;
@@ -221,6 +228,8 @@ p {
   top: 70px;
   left: -100px;
 }
+
+/* Testimonials Section */
 .testimonials {
   background: rgba(156, 105, 226, 1);
   border-radius: 50px;
@@ -241,6 +250,10 @@ p {
   display: flex;
   gap: 32px;
   overflow: auto;
+  scrollbar-width: none;
+}
+.testimonial-container::-webkit-scrollbar {
+  display: none;
 }
 .testimonial {
   display: flex;
@@ -260,6 +273,10 @@ p {
   border-radius: 50%;
   background-color: grey;
   flex-shrink: 0;
+  overflow: hidden;
+}
+.testimonial img {
+  width: 100%;
 }
 .testimonial .info {
   display: flex;
@@ -302,11 +319,15 @@ p {
   width: 10px;
   height: 10px;
 }
+
+/* Horizontal Rule */
 hr {
   background: rgba(156, 105, 226, 1);
   margin-top: 100px;
   height: 2px;
 }
+
+/* Sign up Section */
 .signup {
   margin-top: 100px;
   margin-bottom: 100px;
@@ -334,6 +355,8 @@ hr {
   font-size: 1.125rem;
   text-align: center;
 }
+
+/* Footer */
 footer {
   display: flex;
   flex-direction: column;
