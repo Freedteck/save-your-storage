@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Save your Storage</title>
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="css/demo.css">
+    <script src="js/demo.js" defer></script>
+</head>
+<body>
+    <header class="container" id="header">
+      <a href="/" id="logo">
+        <div class="small"></div>
+        <div class="big"></div>
+      </a>
+      <nav class="navbar">
+        <ul>
+          <li><a href="/#about" class="active link">About</a></li>
+          <li><a href="/#help" class="link">Help</a></li>
+          <li><a href="/#features" class="link">Features</a></li>
+          <li><a href="/#signup" class="link">Signup</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <main class="container">
+         <h2>Request Demo</h2> 
+        <section>
+            <form>
+                <fieldset>
+                    <legend>Add new item</legend>
+                    <label>
+                        ID
+                        <input type="text" name="itemId" required placeholder="Enter id for this item">
+                    </label>
+                    <label>
+                        Item name
+                        <input type="text" name="itemName" required placeholder="Name of item">
+                    </label>
+                    <label>
+                        Item price
+                        <input type="number" name="itemPrice" required min="0.01" step="0.01" placeholder="Item price e.g 0.5, 100...">
+                    </label>
+                    <button disabled>Submit</button>
+                </fieldset>
+            </form>
+            
+            <table>
+                <caption>Stored items</caption>
+                <thead>
+                    <tr>
+                        <th>ID</th>
+                        <th>Item name</th>
+                        <th>Item price</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <!-- To be added here by JavaScript -->
+                </tbody>
+            </table>
+        </section>
+    </main>
+
+<hr />
+    <footer class="container">
+      <div class="top">
+        <section>
+          <a href="" id="logo">
+            <div class="small"></div>
+            <div class="big"></div>
+            <h3>DataWarehoue</h3>
+          </a>
+          <div class="contact">
+            <p class="address">
+              Warehouse Society, 234 <br />
+              Bahagia Ave Street PRBW 29281
+            </p>
+            <p class="email-tel">
+              <a href="mailto: info@warehouse.project"
+                >info@warehouse.project</a
+              >
+              <a href="tel: 1-232-3434">1-232-3434 (Main)</a>
+            </p>
+          </div>
+        </section>
+        <section>
+          <h3>About</h3>
+          <ul>
+            <li><a href="#">Profile</a></li>
+            <li><a href="#">Features</a></li>
+            <li><a href="#">Careers</a></li>
+            <li><a href="#">DW News</a></li>
+          </ul>
+        </section>
+        <section>
+          <h3>Help</h3>
+          <ul>
+            <li><a href="#">Support</a></li>
+            <li><a href="#">Sign up</a></li>
+            <li><a href="#">Guide</a></li>
+            <li><a href="#">Reports</a></li>
+            <li><a href="#">Q&A</a></li>
+          </ul>
+        </section>
+        <section>
+          <h3>Social Media</h3>
+          <div class="socials">
+            <a href="#"
+              ><img src="img/facebook.svg" alt="facebook" width="24"
+            /></a>
+            <a href="#"
+              ><img src="img/twitter.svg" alt="twitter" width="24"
+            /></a>
+            <a href="#"
+              ><img src="img/instagram.svg" alt="instagram" width="24"
+            /></a>
+          </div>
+        </section>
+      </div>
+      <div class="bottom">
+        <div>
+          <p>
+            © Datawarehouse™, 2020. All rights reserved. <br />
+            Company Registration Number: 21479524.
+          </p>
+        </div>
+        <a href="" class="chat">
+          <img src="img/chat-processing.svg" alt="chat" width="30" />
+        </a>
+      </div>
+    </footer>
+</body>
+</html>

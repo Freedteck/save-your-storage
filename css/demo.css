@@ -1,0 +1,111 @@
+#header  {
+    justify-content: space-between;
+}
+header .navbar {
+    flex-grow: 0;
+}
+main.container {
+    max-width: 768px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    gap: 50px;
+    padding: 50px 20px;
+}
+main h2 {
+    text-align: center;
+}
+main > section {
+    display: flex;
+    flex-direction: column;
+    gap: 50px;
+    align-items: center;
+}
+main > section form, main > section table {
+min-width: 310px;
+    flex: 1;
+}
+
+/* Form Styles */
+form {
+    background-color: #F9F0FF;
+    border-radius: 50px;
+    padding: 40px;
+    width: 100%;
+}
+
+fieldset {
+    display: flex;
+    flex-direction: column;
+    gap: 32px;
+    border: none;
+}
+legend {
+    margin-bottom: 32px;
+}
+
+label {
+    color: #212353;
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+
+input {
+    padding: 10px;
+    border: 1px solid #9C69E2;
+    border-radius: 50px;
+}
+
+button {
+    background-color: #9C69E2;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 50px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+button:hover {
+    background-color: #8A56E2;
+}
+
+button:disabled {
+    background-color: #EAE2F8;
+    color: #9C69E2;
+    cursor: not-allowed;
+}
+
+/* Table Styles */
+
+table {
+    width: 100%;
+    border-collapse: separate;
+    border-spacing: 0 10px;
+}
+
+th, td {
+    text-align: left;
+    padding: 12px;
+}
+
+th {
+    background-color: #9C69E2;
+    color: white;
+}
+
+tr:nth-child(even) {
+    background-color: #F9F0FF;
+}
+
+tr:nth-child(odd) {
+    background-color: #FFFFFF;
+}
+
+legend, caption {
+    text-align: center;
+    font-size: 1.5rem;
+  font-weight: 600;
+  color: rgba(33, 35, 83, 1);
+}

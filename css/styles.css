@@ -8,8 +8,12 @@
   color: rgba(75, 93, 104, 1);
   line-height: 1.15;
 }
+html {
+    scroll-behavior: smooth;
+}
 body {
   background: #f6fafd;
+  min-height: 100vh;
 }
 .container {
   padding: 20px 50px;
@@ -21,8 +25,9 @@ body {
 header.container {
   display: flex;
   align-items: center;
-  gap: 100px;
+  gap: 20px 100px;
   padding-top: 50px;
+  flex-wrap: wrap;
 }
 #logo {
   display: flex;
@@ -62,16 +67,17 @@ header nav ul a:hover {
   display: flex;
   align-items: center;
   justify-content: space-between;
+  flex-wrap: wrap;
 }
-header nav button > div,
-.btns button > div {
+header nav .button > div,
+.btns .button > div {
   display: flex;
   align-items: center;
   gap: 10px;
   color: rgba(33, 35, 83, 1);
 }
-header button,
-.btns button {
+header .button,
+.btns .button {
   background: rgba(255, 255, 255, 1);
   border-radius: 50px;
   padding: 15px 50px;
@@ -367,6 +373,7 @@ footer .top {
   display: flex;
   justify-content: space-between;
   gap: 32px;
+  flex-wrap: wrap;
 }
 footer h3 {
   font-weight: 900;
